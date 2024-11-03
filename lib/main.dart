@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:resposive_dashboard/core/utils/colors.dart';
 import 'package:resposive_dashboard/presentation/views/resposive_dashboard.dart';
 
 void main() {
@@ -10,7 +12,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-        debugShowCheckedModeBanner: false, home: ResposiveDashboardView());
+    return MaterialApp(
+        theme: ThemeData(
+            scaffoldBackgroundColor: bgColor,
+            fontFamily: GoogleFonts.montserrat().fontFamily),
+        debugShowCheckedModeBanner: false,
+        home: const ResposiveDashboardView());
   }
 }

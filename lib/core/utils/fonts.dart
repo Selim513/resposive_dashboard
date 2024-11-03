@@ -1,0 +1,15 @@
+import 'package:flutter/material.dart';
+
+TextStyle getTitleFont(
+    {double fontsize = 20,
+    FontWeight fontweight = FontWeight.w600,
+    Color color = const Color(0xff064061)}) {
+  return TextStyle(fontSize: fontsize, fontWeight: fontweight, color: color);
+}
+
+TextStyle getSubtitleFont(
+    {double fontsize = 12,
+    FontWeight fontweight = FontWeight.w400,
+    Color color = const Color(0xffAAAAAA)}) {
+  return TextStyle(fontSize: fontsize, fontWeight: fontweight, color: color);
+}
