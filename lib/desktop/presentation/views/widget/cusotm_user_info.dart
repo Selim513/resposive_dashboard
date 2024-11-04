@@ -3,11 +3,14 @@ import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
 import 'package:resposive_dashboard/core/utils/colors.dart';
 import 'package:resposive_dashboard/core/utils/fonts.dart';
+import 'package:resposive_dashboard/core/utils/resposive_font.dart';
 
 class CusotmUserInfo extends StatelessWidget {
   const CusotmUserInfo({
     super.key,
+    required this.width,
   });
+  final double width;
 
   @override
   Widget build(BuildContext context) {
@@ -24,11 +27,15 @@ class CusotmUserInfo extends StatelessWidget {
             children: [
               Text(
                 'Ahmed Selim',
-                style: getTitleFont(fontsize: 16),
+                style: getTitleFont(
+                    fontsize:
+                        resposiveFont(context, fontSize: 10, width: width)),
               ),
               Text(
                 'example@gmail.com',
-                style: getSubtitleFont(),
+                style: getSubtitleFont(
+                    fontsize:
+                        resposiveFont(context, fontSize: 8, width: width)),
               ),
             ],
           )
