@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:resposive_dashboard/desktop/presentation/views/widget/all_expenses_and_quieck_invoice_section.dart';
 import 'package:resposive_dashboard/desktop/presentation/views/widget/custom_profile_view.dart';
 
 class DesktopBody extends StatelessWidget {
@@ -9,15 +10,10 @@ class DesktopBody extends StatelessWidget {
     return Scaffold(
       body: Row(
         children: [
-          const Expanded(child: CustomProfileView()),
-          Expanded(
+          const Expanded(child: CustomRawer()),
+          const Expanded(
             flex: 3,
-            child: Padding(
-              padding: const EdgeInsets.only(top: 40, left: 24),
-              child: Container(
-                color: Colors.green,
-              ),
-            ),
+            child: AllExpensesAndQuieckInvoiceSection(),
           ),
           Expanded(
             flex: 2,

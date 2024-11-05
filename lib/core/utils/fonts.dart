@@ -27,3 +27,17 @@ TextStyle getSelectedFont(
     Color color = const Color(0xff4EB7F2)}) {
   return TextStyle(fontSize: fontsize, fontWeight: fontweight, color: color);
 }
+
+TextStyle getWhiteFont(
+    {double fontsize = 16,
+    FontWeight fontweight = FontWeight.w600,
+    Color color = Colors.white}) {
+  return TextStyle(fontSize: fontsize, fontWeight: fontweight, color: color);
+}
+
+TextStyle getGreyFont(
+    {double fontsize = 14,
+    FontWeight fontweight = FontWeight.w400,
+    Color color = const Color(0xffAAAAAA)}) {
+  return TextStyle(fontSize: fontsize, fontWeight: fontweight, color: color);
+}

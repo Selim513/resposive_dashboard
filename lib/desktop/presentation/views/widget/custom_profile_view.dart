@@ -6,8 +6,8 @@ import 'custom_dashboard_item.dart';
 import 'custom_profile_settings.dart';
 import 'cutom_profile_image.dart';
 
-class CustomProfileView extends StatelessWidget {
-  const CustomProfileView({
+class CustomRawer extends StatelessWidget {
+  const CustomRawer({
     super.key,
   });
   @override
@@ -16,21 +16,14 @@ class CustomProfileView extends StatelessWidget {
       width: MediaQuery.sizeOf(context).width * 0.7,
       padding: const EdgeInsets.only(top: 40, left: 20, right: 10),
       color: Colors.white,
-      child: Column(
+      child: const Column(
         children: [
-          const CustomProfileImage(),
-          const Gap(15),
-          CusotmUserInfo(
-           
-          ),
-          const Gap(30),
-          Flexible(
-              child: CustomDashboardItem(
-           
-          )),
-          CustomProfileSettings(
-           
-          )
+          CustomProfileImage(),
+          Gap(15),
+          CusotmUserInfo(),
+          Gap(30),
+          Flexible(child: CustomDashboardItem()),
+          CustomProfileSettings()
         ],
       ),
     );
