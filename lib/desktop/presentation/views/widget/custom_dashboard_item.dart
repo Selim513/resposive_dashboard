@@ -10,9 +10,7 @@ import '../../../../core/utils/colors.dart';
 class CustomDashboardItem extends StatefulWidget {
   const CustomDashboardItem({
     super.key,
-    required this.width,
   });
-  final double width;
   @override
   State<CustomDashboardItem> createState() => _CustomDashboardItemState();
 }
@@ -36,16 +34,20 @@ class _CustomDashboardItemState extends State<CustomDashboardItem> {
             child: Row(
               children: [
                 IconsPath(name: item.icon),
-                const Gap(10),
+                const Gap(15),
                 Text(item.name,
                     style: currentindex == index
                         ? getSelectedFont(
-                            fontsize: resposiveFont(context,
-                                fontSize: 10, width: widget.width),
+                            fontsize: resposiveFont(
+                              context,
+                              fontSize: 10,
+                            ),
                           )
                         : getPrimaryFont(
-                            fontsize: resposiveFont(context,
-                                fontSize: 10, width: widget.width),
+                            fontsize: resposiveFont(
+                              context,
+                              fontSize: 10,
+                            ),
                           )),
                 const Spacer(),
                 currentindex == index

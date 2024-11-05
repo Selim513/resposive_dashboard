@@ -23,7 +23,7 @@ TextStyle getPrimaryFont(
 
 TextStyle getSelectedFont(
     {double fontsize = 18,
-    FontWeight fontweight = FontWeight.w400,
+    FontWeight fontweight = FontWeight.w700,
     Color color = const Color(0xff4EB7F2)}) {
   return TextStyle(fontSize: fontsize, fontWeight: fontweight, color: color);
 }

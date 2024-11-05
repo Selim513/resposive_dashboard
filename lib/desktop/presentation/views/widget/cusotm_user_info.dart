@@ -8,9 +8,8 @@ import 'package:resposive_dashboard/core/utils/resposive_font.dart';
 class CusotmUserInfo extends StatelessWidget {
   const CusotmUserInfo({
     super.key,
-    required this.width,
+    
   });
-  final double width;
 
   @override
   Widget build(BuildContext context) {
@@ -29,13 +28,13 @@ class CusotmUserInfo extends StatelessWidget {
                 'Ahmed Selim',
                 style: getTitleFont(
                     fontsize:
-                        resposiveFont(context, fontSize: 10, width: width)),
+                        resposiveFont(context, fontSize: 10,)),
               ),
               Text(
                 'example@gmail.com',
                 style: getSubtitleFont(
                     fontsize:
-                        resposiveFont(context, fontSize: 8, width: width)),
+                        resposiveFont(context, fontSize: 8,)),
               ),
             ],
           )

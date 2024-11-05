@@ -8,9 +8,7 @@ import '../../../../core/utils/resposive_font.dart';
 class CustomProfileSettings extends StatelessWidget {
   const CustomProfileSettings({
     super.key,
-    required this.width,
   });
-  final double width;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +26,7 @@ class CustomProfileSettings extends StatelessWidget {
                 'Settings System',
                 style: getPrimaryFont(
                     fontsize:
-                        resposiveFont(context, fontSize: 10, width: width)),
+                        resposiveFont(context, fontSize: 10, )),
               )
             ],
           ),
@@ -37,10 +35,10 @@ class CustomProfileSettings extends StatelessWidget {
             children: [
               IconsPath(name: 'logout'),
               const Gap(10),
-              Text('Settings system',
+              Text('Logout account',
                   style: getPrimaryFont(
                     fontsize:
-                        resposiveFont(context, fontSize: 10, width: width),
+                        resposiveFont(context, fontSize: 10,),
                   )),
             ],
           )

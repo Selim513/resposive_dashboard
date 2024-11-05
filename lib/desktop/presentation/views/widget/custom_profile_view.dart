@@ -13,28 +13,25 @@ class CustomProfileView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: MediaQuery.sizeOf(context).width * 0.7,
       padding: const EdgeInsets.only(top: 40, left: 20, right: 10),
       color: Colors.white,
-      child: LayoutBuilder(
-        builder: (context, constraints) {
-          return Column(
-            children: [
-              const CustomProfileImage(),
-              const Gap(10),
-              CusotmUserInfo(
-                width: constraints.maxWidth,
-              ),
-              const Gap(30),
-              Flexible(
-                  child: CustomDashboardItem(
-                width: constraints.maxWidth,
-              )),
-              CustomProfileSettings(
-                width: constraints.maxWidth,
-              )
-            ],
-          );
-        },
+      child: Column(
+        children: [
+          const CustomProfileImage(),
+          const Gap(15),
+          CusotmUserInfo(
+           
+          ),
+          const Gap(30),
+          Flexible(
+              child: CustomDashboardItem(
+           
+          )),
+          CustomProfileSettings(
+           
+          )
+        ],
       ),
     );
   }
