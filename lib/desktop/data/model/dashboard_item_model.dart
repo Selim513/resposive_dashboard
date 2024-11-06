@@ -1,6 +1,6 @@
 class DashboardItemModel {
-  final String icon;
-  final String name;
+  final String icon,name;
+  
   // final bool isSelected;
 
   DashboardItemModel(

@@ -18,7 +18,8 @@ class CustomQuickInvoiceSection extends StatelessWidget {
           action: CustomHeaderQuickInvoiceIconButton(),
         ),
         Gap(25),
-        CustomLatestTransectionSection()
+        CustomLatestTransectionSection(),
+        
       ],
     );
   }
