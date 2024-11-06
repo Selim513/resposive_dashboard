@@ -17,7 +17,7 @@ class CustomActiveExpensesItem extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-          color: primaryColor, borderRadius: BorderRadius.circular(12)),
+          color:AppColors. primaryColor, borderRadius: BorderRadius.circular(12)),
       child: CustomEpensesActiveContainerItem(items: items),
     );
   }

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:resposive_dashboard/core/utils/fonts.dart';
 import 'package:resposive_dashboard/core/utils/icon_path.dart';
-import 'package:resposive_dashboard/core/utils/resposive_font.dart';
 import 'package:resposive_dashboard/desktop/data/model/dashboard_item_model.dart';
 
 import '../../../../core/utils/colors.dart';
@@ -33,28 +32,26 @@ class _CustomDashboardItemState extends State<CustomDashboardItem> {
             padding: const EdgeInsets.all(12),
             child: Row(
               children: [
-                iconsPath(name: item.icon),
+                AssetsPath.iconsPath(name: item.icon),
                 const Gap(15),
-                Text(item.name,
-                    style: currentindex == index
-                        ? getSelectedFont(
-                            fontsize: resposiveFont(
-                              context,
-                              fontSize: 10,
-                            ),
-                          )
-                        : getPrimaryFont(
-                            fontsize: resposiveFont(
-                              context,
-                              fontSize: 10,
-                            ),
-                          )),
+                Text(
+                  item.name,
+                  style: currentindex == index
+                      ? AppFonts.getSelectedFont(
+                          context,
+                          fontSize: 14,
+                        )
+                      : AppFonts.getPrimaryFont(
+                          context,
+                          fontSize: 11,
+                        ),
+                ),
                 const Spacer(),
                 currentindex == index
                     ? Container(
                         height: 50,
                         width: 3.3,
-                        color: primaryColor,
+                        color: AppColors.primaryColor,
                       )
                     : const SizedBox()
               ],

@@ -20,7 +20,7 @@ class CustomRawer extends StatelessWidget {
         children: [
           CustomProfileImage(),
           Gap(15),
-          CusotmUserInfo(),
+          CustomUserInfoDrawer(),
           Gap(30),
           Flexible(child: CustomDashboardItem()),
           CustomProfileSettings()

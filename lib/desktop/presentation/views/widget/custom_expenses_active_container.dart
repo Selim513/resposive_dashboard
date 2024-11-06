@@ -23,14 +23,14 @@ class CustomEpensesActiveContainerItem extends StatelessWidget {
           bgColor: const Color(0xff5FBEF3),
         ),
         const Gap(30),
-        Text(items.title, style: getWhiteFont()),
+        Text(items.title, style:AppFonts.getWhiteFont(context)),
         Text(
           items.date,
-          style: getWhiteFont(fontsize: 14, fontweight: FontWeight.w400),
+          style:AppFonts. getWhiteFont(context,fontSize: 14, fontweight: FontWeight.w400),
         ),
         Text(
           items.amnount,
-          style: getWhiteFont(fontsize: 24),
+          style:AppFonts. getWhiteFont(context,fontSize: 24),
         )
       ],
     );

@@ -3,8 +3,6 @@ import 'package:gap/gap.dart';
 import 'package:resposive_dashboard/core/utils/fonts.dart';
 import 'package:resposive_dashboard/core/utils/icon_path.dart';
 
-import '../../../../core/utils/resposive_font.dart';
-
 class CustomProfileSettings extends StatelessWidget {
   const CustomProfileSettings({
     super.key,
@@ -18,31 +16,28 @@ class CustomProfileSettings extends StatelessWidget {
         children: [
           Row(
             children: [
-              iconsPath(
+              AssetsPath.iconsPath(
                 name: 'setting',
               ),
               const Gap(10),
               Text(
                 'Settings System',
-                style: getPrimaryFont(
-                    fontsize: resposiveFont(
+                style: AppFonts.getPrimaryFont(
                   context,
                   fontSize: 10,
-                )),
+                ),
               )
             ],
           ),
           const Gap(20),
           Row(
             children: [
-              iconsPath(name: 'logout'),
+              AssetsPath.iconsPath(name: 'logout'),
               const Gap(10),
               Text('Logout account',
-                  style: getPrimaryFont(
-                    fontsize: resposiveFont(
-                      context,
-                      fontSize: 10,
-                    ),
+                  style: AppFonts.getPrimaryFont(
+                    context,
+                    fontSize: 10,
                   )),
             ],
           )

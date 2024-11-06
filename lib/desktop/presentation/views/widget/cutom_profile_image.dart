@@ -12,7 +12,7 @@ class CustomProfileImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: greyColor,
+      color:AppColors. greyColor,
       width: 193,
       height: 53,
       child: SvgPicture.asset(

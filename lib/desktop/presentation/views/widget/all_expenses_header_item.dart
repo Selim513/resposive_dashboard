@@ -20,7 +20,7 @@ class AllexpensesItemHeader extends StatelessWidget {
         CircleAvatar(
           backgroundColor: bgColor,
           radius: 30,
-          child: iconsPath(
+          child:AssetsPath. iconsPath(
             name: items.icon,
             colorFillter: ColorFilter.mode(color, BlendMode.srcIn),
           ),

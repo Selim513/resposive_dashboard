@@ -21,7 +21,7 @@ class CustomMonthlyElevatedButton extends StatelessWidget {
           children: [
             Text(
               'Monthly',
-              style: getPrimaryFont(fontweight: FontWeight.w500),
+              style:AppFonts. getPrimaryFont(context,fontweight: FontWeight.w500),
             ),
             const Icon(Icons.keyboard_arrow_down_sharp)
           ],

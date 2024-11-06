@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:resposive_dashboard/desktop/presentation/views/widget/all_expenses_and_quieck_invoice_section.dart';
-import 'package:resposive_dashboard/desktop/presentation/views/widget/custom_profile_view.dart';
+import 'package:resposive_dashboard/desktop/presentation/views/widget/custom_drawer_view.dart';
 
 class DesktopBody extends StatelessWidget {
   const DesktopBody({super.key});

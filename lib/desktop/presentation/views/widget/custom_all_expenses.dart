@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
-import 'package:resposive_dashboard/desktop/presentation/views/widget/custom_all_expenses_item.dart';
 
-import 'custom_all_expenses_header.dart';
-
-class CustomAllExpenses extends StatelessWidget {
-  const CustomAllExpenses({super.key});
-
+class CustomContainer extends StatelessWidget {
+  const CustomContainer({super.key, required this.items});
+  final Widget items;
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [AllExpensesHeader(), Gap(10), CustomAllExpensesItem()],
-    );
+    return Container(
+        padding: const EdgeInsets.all(15),
+        decoration: BoxDecoration(
+            color: Colors.white, borderRadius: BorderRadius.circular(15)),
+        child: items);
   }
 }

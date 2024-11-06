@@ -23,14 +23,14 @@ class CustomExpensesInActiveContainer extends StatelessWidget {
           bgColor: const Color(0xffFAFAFA),
         ),
         const Gap(30),
-        Text(items.title, style: getTitleFont(fontsize: 16)),
+        Text(items.title, style: AppFonts.getTitleFont(context, fontSize: 16)),
         Text(
           items.date,
-          style: getGreyFont(),
+          style: AppFonts.getGreyFont(context),
         ),
         Text(
           items.amnount,
-          style: getSelectedFont(fontsize: 24),
+          style: AppFonts.getSelectedFont(context, fontSize: 22),
         )
       ],
     );

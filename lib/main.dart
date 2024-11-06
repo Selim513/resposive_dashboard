@@ -14,7 +14,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         theme: ThemeData(
-            scaffoldBackgroundColor: bgColor,
+            scaffoldBackgroundColor: AppColors. bgColor,
             fontFamily: GoogleFonts.montserrat().fontFamily),
         debugShowCheckedModeBanner: false,
         home: const ResposiveDashboardView());
