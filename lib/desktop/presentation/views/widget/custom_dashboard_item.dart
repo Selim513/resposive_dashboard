@@ -33,7 +33,7 @@ class _CustomDashboardItemState extends State<CustomDashboardItem> {
             padding: const EdgeInsets.all(12),
             child: Row(
               children: [
-                IconsPath(name: item.icon),
+                iconsPath(name: item.icon),
                 const Gap(15),
                 Text(item.name,
                     style: currentindex == index

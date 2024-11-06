@@ -18,27 +18,31 @@ class CustomProfileSettings extends StatelessWidget {
         children: [
           Row(
             children: [
-              IconsPath(
+              iconsPath(
                 name: 'setting',
               ),
               const Gap(10),
               Text(
                 'Settings System',
                 style: getPrimaryFont(
-                    fontsize:
-                        resposiveFont(context, fontSize: 10, )),
+                    fontsize: resposiveFont(
+                  context,
+                  fontSize: 10,
+                )),
               )
             ],
           ),
           const Gap(20),
           Row(
             children: [
-              IconsPath(name: 'logout'),
+              iconsPath(name: 'logout'),
               const Gap(10),
               Text('Logout account',
                   style: getPrimaryFont(
-                    fontsize:
-                        resposiveFont(context, fontSize: 10,),
+                    fontsize: resposiveFont(
+                      context,
+                      fontSize: 10,
+                    ),
                   )),
             ],
           )
