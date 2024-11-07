@@ -11,13 +11,15 @@ class CustomProfileImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color:AppColors. greyColor,
-      width: 193,
-      height: 53,
-      child: SvgPicture.asset(
-        'assets/icons/image.svg',
-        fit: BoxFit.scaleDown,
+    return SliverToBoxAdapter(
+      child: Container(
+        color:AppColors. greyColor,
+        width: 193,
+        height: 53,
+        child: SvgPicture.asset(
+          'assets/icons/image.svg',
+          fit: BoxFit.scaleDown,
+        ),
       ),
     );
   }

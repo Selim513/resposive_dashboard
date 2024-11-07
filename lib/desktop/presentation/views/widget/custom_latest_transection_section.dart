@@ -23,7 +23,7 @@ class CustomLatestTransectionSection extends StatelessWidget {
         const Divider(
           color: AppColors.offWhiteColor,
         ),
-        Gap(20),
+        const Gap(20),
         const SendMoneySection()
       ],
     );

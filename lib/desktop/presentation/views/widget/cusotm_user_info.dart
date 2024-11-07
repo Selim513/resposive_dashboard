@@ -9,10 +9,12 @@ class CustomUserInfoDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CustomUserDetails(
-      image: 'person1',
-      title: 'Ahmed Selim',
-      subtitle: 'ahmedshaabanselem@gmail.com',
+    return const SliverToBoxAdapter(
+      child: CustomUserDetails(
+        image: 'person1',
+        title: 'Ahmed Selim',
+        subtitle: 'ahmedshaabanselem@gmail.com',
+      ),
     );
   }
 }

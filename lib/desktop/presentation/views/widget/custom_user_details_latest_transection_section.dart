@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:resposive_dashboard/core/utils/colors.dart';
@@ -25,15 +24,19 @@ class CustomUserDetailLatestTransectionSection extends StatelessWidget {
             AssetsPath.imagePath(name: user.image),
             const Gap(10),
             Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   user.title,
                   style: AppFonts.getTitleFont(context),
                 ),
-                Text(
-                  user.subtitle,
-                  style: AppFonts.getSubtitleFont(context),
+                FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: Text(
+                    user.subtitle,
+                    style: AppFonts.getSubtitleFont(context),
+                  ),
                 ),
               ],
             )

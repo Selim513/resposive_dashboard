@@ -18,8 +18,7 @@ class _CustomDashboardItemState extends State<CustomDashboardItem> {
   int currentindex = 0;
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      physics: const NeverScrollableScrollPhysics(),
+    return SliverList.builder(
       itemCount: dashboardItem.length,
       itemBuilder: (context, index) {
         var item = dashboardItem[index];

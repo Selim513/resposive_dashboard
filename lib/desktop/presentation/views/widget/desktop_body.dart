@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:resposive_dashboard/desktop/presentation/views/widget/all_expenses_and_quieck_invoice_section.dart';
 
-import 'custom_profile_view.dart';
+import 'custom_drawer..dart';
 
 class DesktopBody extends StatelessWidget {
   const DesktopBody({super.key});
@@ -11,7 +11,7 @@ class DesktopBody extends StatelessWidget {
     return Scaffold(
       body: Row(
         children: [
-          const Expanded(child: CustomRawer()),
+          const Expanded(child: CustomDrawer()),
           const Expanded(
             flex: 3,
             child: AllExpensesAndQuieckInvoiceSection(),

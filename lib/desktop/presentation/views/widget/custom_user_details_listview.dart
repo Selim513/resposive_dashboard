@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:resposive_dashboard/desktop/presentation/views/widget/custom_user_details_latest_transection_section.dart';
 
@@ -11,15 +10,16 @@ class CustomUserDetailsListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: MediaQuery.sizeOf(context).height * 0.1,
-      child: ListView.builder(
-        itemCount: userList.length,
-        scrollDirection: Axis.horizontal,
-        itemBuilder: (context, index) =>
-            CustomUserDetailLatestTransectionSection(
-          user: userList[index],
-        ),
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        children: userList
+            .map(
+              (e) => IntrinsicWidth(
+                child: CustomUserDetailLatestTransectionSection(user: e),
+              ),
+            )
+            .toList(),
       ),
     );
   }
