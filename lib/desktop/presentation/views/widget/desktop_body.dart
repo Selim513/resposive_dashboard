@@ -12,19 +12,35 @@ class DesktopBody extends StatelessWidget {
       body: Row(
         children: [
           const Expanded(child: CustomDrawer()),
-          const Expanded(
-            flex: 3,
-            child: AllExpensesAndQuieckInvoiceSection(),
-          ),
           Expanded(
-            flex: 2,
-            child: Padding(
-              padding: const EdgeInsets.only(top: 40, left: 24),
-              child: Container(
-                color: Colors.black,
-              ),
+            flex: 4,
+            child: CustomScrollView(
+              slivers: [
+                SliverFillRemaining(
+                  hasScrollBody: false,
+                  child: Row(
+                    children: [
+                      const Expanded(
+                        flex: 3,
+                        child: AllExpensesAndQuieckInvoiceSection(),
+                      ),
+                      Expanded(
+                        flex: 2,
+                        child: Padding(
+                          padding: const EdgeInsets.only(
+                            top: 40,
+                          ),
+                          child: Container(
+                            color: Colors.black,
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                )
+              ],
             ),
-          )
+          ),
         ],
       ),
     );

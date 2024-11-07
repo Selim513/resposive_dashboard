@@ -19,6 +19,8 @@ class CustomTextFormField extends StatelessWidget {
           filled: true,
           enabledBorder: customOutLineBorder(),
           focusedBorder: customOutLineBorder(),
+          errorBorder: customOutLineBorder(),
+          focusedErrorBorder: customOutLineBorder(),
           hintText: hintText,
           hintStyle: AppFonts.getGreyFont(context)),
     );

@@ -1,84 +1,105 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:resposive_dashboard/core/utils/fonts.dart';
-import 'package:resposive_dashboard/core/widgets/custom_text_form_field.dart';
+import 'package:resposive_dashboard/core/utils/colors.dart';
+
+import '../../../../core/utils/fonts.dart';
+import 'custom_money_text_form.dart';
 
 class SendMoneySection extends StatelessWidget {
   const SendMoneySection({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        Row(
-          children: [
-            Expanded(
-              child: CustomSendMoneyForm(
-                title: 'Customer name',
-                hint: 'Type Customer name',
-              ),
-            ),
-            Expanded(
-              child: CustomSendMoneyForm(
-                title: 'Customer Email',
-                hint: 'Type Customer Email',
-              ),
-            ),
-          ],
-        ),
-        Padding(
-          padding: EdgeInsets.only(top: 15),
-          child: Row(
+    var formKey = GlobalKey<FormState>();
+    return Form(
+      key: formKey,
+      child: Column(
+        children: [
+          Row(
             children: [
               Expanded(
                 child: CustomSendMoneyForm(
-                  title: 'Item name',
-                  hint: 'Type item name',
+                  title: 'Customer Name',
+                  hint: 'Type Customer Name',
+                  validator: (value) {
+                    if (value!.isEmpty) {
+                      return 'Customer Name is required';
+                    }
+                    return null;
+                  },
                 ),
               ),
               Expanded(
                 child: CustomSendMoneyForm(
-                  title: 'USD ',
-                  hint: 'Item mount',
+                  title: 'Customer email',
+                  hint: 'Type Customer Email',
+                  validator: (value) {
+                    if (value!.isEmpty) {
+                      return 'Customer Email is required';
+                    }
+                    return null;
+                  },
                 ),
               ),
             ],
           ),
-        ),
-      ],
-    );
-  }
-}
-
-class CustomSendMoneyForm extends StatelessWidget {
-  const CustomSendMoneyForm({
-    super.key,
-    required this.title,
-    required this.hint,
-    this.controller,
-    this.validator,
-  });
-  final String title, hint;
-  final TextEditingController? controller;
-  final String? Function(String? value)? validator;
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(
-        right: 10,
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            title,
-            style: AppFonts.getPrimaryFont(context),
+          const Gap(15),
+          Row(
+            children: [
+              Expanded(
+                  child: CustomSendMoneyForm(
+                title: 'Item Name',
+                hint: 'Type Item Name',
+                validator: (value) {
+                  if (value!.isEmpty) {
+                    return 'Item Name is required';
+                  }
+                  return null;
+                },
+              )),
+              Expanded(
+                  child: CustomSendMoneyForm(
+                title: 'Item amount',
+                hint: 'USD',
+                validator: (value) {
+                  if (value!.isEmpty) {
+                    return 'Item Amount is required';
+                  }
+                  return null;
+                },
+              )),
+            ],
           ),
-          const Gap(10),
-          CustomTextFormField(
-            hintText: hint,
-            controller: controller,
-            validator: validator,
+          const Gap(15),
+          Row(
+            children: [
+              Expanded(
+                child: TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      'Add more details',
+                      style: AppFonts.getSelectedFont(context),
+                    )),
+              ),
+              Expanded(
+                child: SizedBox(
+                    height: 60,
+                    child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                            shape: ContinuousRectangleBorder(
+                                borderRadius: BorderRadius.circular(12)),
+                            backgroundColor: AppColors.primaryColor),
+                        onPressed: () {
+                          if (formKey.currentState!.validate()) {
+                            print('Successfully added');
+                          }
+                        },
+                        child: Text(
+                          'Send Money',
+                          style: AppFonts.getWhiteFont(context, fontSize: 18),
+                        ))),
+              )
+            ],
           )
         ],
       ),

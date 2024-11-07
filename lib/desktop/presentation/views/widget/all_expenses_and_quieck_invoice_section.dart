@@ -10,19 +10,17 @@ class AllExpensesAndQuieckInvoiceSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 40, left: 20),
-      child: ListView(children: const [
-        Column(
-          children: [
-            CustomContainer(
-              items: CustomAllexpensesSection(),
-            ),
-            Gap(10),
-            CustomContainer(items: CustomQuickInvoiceSection())
-          ],
-        )
-      ]),
+    return const Padding(
+      padding: EdgeInsets.all(20),
+      child: Column(
+        children: [
+          CustomContainer(
+            items: CustomAllexpensesSection(),
+          ),
+          Gap(10),
+          CustomContainer(items: CustomQuickInvoiceSection())
+        ],
+      ),
     );
   }
 }
