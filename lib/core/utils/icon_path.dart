@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-class AssetsPath{
+abstract class AssetsPath{
 
 static SvgPicture iconsPath({required String name, ColorFilter? colorFillter}) =>
     SvgPicture.asset(

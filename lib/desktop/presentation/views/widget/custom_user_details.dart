@@ -21,7 +21,7 @@ class CustomUserDetails extends StatelessWidget {
           borderRadius: BorderRadius.circular(15), color: AppColors.bgColor),
       child: Row(
         children: [
-          AssetsPath.imagePath(name: '$image'),
+          AssetsPath.imagePath(name: image),
           const Gap(10),
           Expanded(
             child: Column(

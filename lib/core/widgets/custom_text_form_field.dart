@@ -3,11 +3,11 @@ import 'package:resposive_dashboard/core/utils/colors.dart';
 import 'package:resposive_dashboard/core/utils/fonts.dart';
 
 class CustomTextFormField extends StatelessWidget {
-  CustomTextFormField(
+  const CustomTextFormField(
       {super.key, required this.hintText, this.validator, this.controller});
   final String hintText;
   final String? Function(String? value)? validator;
-  TextEditingController? controller;
+  final TextEditingController? controller;
   @override
   Widget build(BuildContext context) {
     return TextFormField(

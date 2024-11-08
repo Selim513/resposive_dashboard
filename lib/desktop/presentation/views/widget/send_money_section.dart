@@ -3,6 +3,7 @@ import 'package:gap/gap.dart';
 import 'package:resposive_dashboard/core/utils/colors.dart';
 
 import '../../../../core/utils/fonts.dart';
+import '../../../../core/utils/scaffold_messengers.dart';
 import 'custom_money_text_form.dart';
 
 class SendMoneySection extends StatelessWidget {
@@ -91,7 +92,7 @@ class SendMoneySection extends StatelessWidget {
                             backgroundColor: AppColors.primaryColor),
                         onPressed: () {
                           if (formKey.currentState!.validate()) {
-                            print('Successfully added');
+                            customSuccessMessage(context);
                           }
                         },
                         child: Text(

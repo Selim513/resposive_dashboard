@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:resposive_dashboard/core/utils/resposive_font.dart';
 
-class AppFonts {
+abstract class AppFonts {
   static TextStyle getTitleFont(context,
       {double fontSize = 20,
       FontWeight fontweight = FontWeight.w600,
