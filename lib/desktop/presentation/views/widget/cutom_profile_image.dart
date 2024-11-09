@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -13,11 +12,11 @@ class CustomProfileImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
       child: Container(
-        color:AppColors. greyColor,
+        color: AppColors.greyColor,
         width: 193,
         height: 53,
         child: SvgPicture.asset(
-          'assets/icons/image.svg',
+          'assets/icons/gallery.svg',
           fit: BoxFit.scaleDown,
         ),
       ),
