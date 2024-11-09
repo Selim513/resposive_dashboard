@@ -15,10 +15,10 @@ class AllExpensesAndQuieckInvoiceSection extends StatelessWidget {
       child: Column(
         children: [
           CustomContainer(
-            items: CustomAllexpensesSection(),
+            widgets: CustomAllexpensesSection(),
           ),
           Gap(10),
-          CustomContainer(items: CustomQuickInvoiceSection())
+          CustomContainer(widgets: CustomQuickInvoiceSection())
         ],
       ),
     );

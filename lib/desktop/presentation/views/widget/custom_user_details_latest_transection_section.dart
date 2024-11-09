@@ -3,7 +3,7 @@ import 'package:gap/gap.dart';
 import 'package:resposive_dashboard/core/utils/colors.dart';
 import 'package:resposive_dashboard/core/utils/fonts.dart';
 import 'package:resposive_dashboard/core/utils/icon_path.dart';
-import 'package:resposive_dashboard/desktop/data/model/user_detail_model.dart';
+import 'package:resposive_dashboard/core/models/user_detail_model.dart';
 
 class CustomUserDetailLatestTransectionSection extends StatelessWidget {
   const CustomUserDetailLatestTransectionSection({

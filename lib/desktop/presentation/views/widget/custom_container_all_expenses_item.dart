@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:resposive_dashboard/desktop/data/model/expenses_item_model.dart';
+import 'package:resposive_dashboard/core/models/expenses_item_model.dart';
 import 'package:resposive_dashboard/desktop/presentation/views/widget/custom_active_expenses_item.dart';
 
 import 'custom_inactive_expenses_item.dart';
