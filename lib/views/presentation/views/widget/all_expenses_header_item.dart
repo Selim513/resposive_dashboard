@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:resposive_dashboard/core/models/expenses_item_model.dart';
+import 'package:resposive_dashboard/views/presentation/data/models/expenses_item_model.dart';
 import 'package:resposive_dashboard/core/utils/icon_path.dart';
 
 class AllexpensesItemHeader extends StatelessWidget {

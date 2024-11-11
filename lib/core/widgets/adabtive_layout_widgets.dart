@@ -13,8 +13,8 @@ class AdabtiveLayoutWidgets extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        double width = MediaQuery.sizeOf(context).width;
-        print(width);
+        // double width = MediaQuery.sizeOf(context).width;
+        // print(width);
         if (constraints.maxWidth < 700) {
           return mobileLayout(context);
         } else if (constraints.maxWidth < 1200) {

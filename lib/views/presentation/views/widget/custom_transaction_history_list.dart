@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:resposive_dashboard/core/utils/fonts.dart';
 
-import '../../../../core/models/transection_history_model.dart';
+import '../../data/models/transection_history_model.dart';
 import '../../../../core/utils/colors.dart';
 
 class CustomTransactionHistoryItem extends StatelessWidget {

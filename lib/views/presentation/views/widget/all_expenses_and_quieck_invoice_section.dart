@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:resposive_dashboard/desktop/presentation/views/widget/custom_all_expenses.dart';
-import 'package:resposive_dashboard/desktop/presentation/views/widget/custom_quick_invoice_section.dart';
+import 'package:resposive_dashboard/views/presentation/views/widget/custom_all_expenses.dart';
+import 'package:resposive_dashboard/views/presentation/views/widget/custom_quick_invoice_section.dart';
 
 import 'custom_all_expenses_section.dart';
 

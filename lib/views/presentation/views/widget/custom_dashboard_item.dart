@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:resposive_dashboard/core/utils/fonts.dart';
 import 'package:resposive_dashboard/core/utils/icon_path.dart';
-import 'package:resposive_dashboard/core/models/dashboard_item_model.dart';
+import 'package:resposive_dashboard/views/presentation/data/models/dashboard_item_model.dart';
 
 import '../../../../core/utils/colors.dart';
 

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:resposive_dashboard/desktop/presentation/views/widget/custom_all_expenses.dart';
-import 'package:resposive_dashboard/desktop/presentation/views/widget/custom_all_expenses_header.dart';
-import 'package:resposive_dashboard/desktop/presentation/views/widget/custom_monthly_elevated_button.dart';
-import 'package:resposive_dashboard/desktop/presentation/views/widget/my_card_view.dart';
+import 'package:resposive_dashboard/views/presentation/views/widget/custom_all_expenses.dart';
+import 'package:resposive_dashboard/views/presentation/views/widget/custom_all_expenses_header.dart';
+import 'package:resposive_dashboard/views/presentation/views/widget/custom_monthly_elevated_button.dart';
+import 'package:resposive_dashboard/views/presentation/views/widget/my_card_view.dart';
 
 class CustomMyCardAndIncomeSection extends StatelessWidget {
   const CustomMyCardAndIncomeSection({super.key});

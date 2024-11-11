@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:resposive_dashboard/core/models/user_detail_model.dart';
+import 'package:resposive_dashboard/views/presentation/data/models/user_detail_model.dart';
 import 'package:resposive_dashboard/core/utils/colors.dart';
 import 'package:resposive_dashboard/core/utils/fonts.dart';
 import 'package:resposive_dashboard/core/utils/icon_path.dart';

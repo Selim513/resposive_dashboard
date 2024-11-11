@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:resposive_dashboard/desktop/presentation/views/widget/all_expenses_and_quieck_invoice_section.dart';
-import 'package:resposive_dashboard/desktop/presentation/views/widget/custom_mycard_and_income_section.dart';
+import 'package:resposive_dashboard/views/presentation/views/widget/all_expenses_and_quieck_invoice_section.dart';
+import 'package:resposive_dashboard/views/presentation/views/widget/custom_mycard_and_income_section.dart';
 
 import 'custom_drawer.dart';
 
