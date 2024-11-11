@@ -11,7 +11,7 @@ class CustomMyCardAndIncomeSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding: EdgeInsets.symmetric(vertical: 20),
+      padding: EdgeInsets.only(top: 20),
       child: Column(
         children: [MyCardSection(), Gap(10), IncomeSection()],
       ),
@@ -27,8 +27,9 @@ class IncomeSection extends StatelessWidget {
     return const CustomContainer(
       widgets: Column(
         children: [
-          CustomHeader(title: 'Income', action: CustomMonthlyElevatedButton(),
-          
+          CustomHeader(
+            title: 'Income',
+            action: CustomMonthlyElevatedButton(),
           )
         ],
       ),

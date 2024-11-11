@@ -11,7 +11,7 @@ class AllExpensesAndQuieckInvoiceSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding: EdgeInsets.all(20),
+      padding: EdgeInsets.only(top: 20, left: 15, right: 15),
       child: Column(
         children: [
           CustomContainer(

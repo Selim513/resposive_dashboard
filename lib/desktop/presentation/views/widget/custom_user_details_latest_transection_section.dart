@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:resposive_dashboard/core/models/user_detail_model.dart';
 import 'package:resposive_dashboard/core/utils/colors.dart';
 import 'package:resposive_dashboard/core/utils/fonts.dart';
 import 'package:resposive_dashboard/core/utils/icon_path.dart';
-import 'package:resposive_dashboard/core/models/user_detail_model.dart';
 
 class CustomUserDetailLatestTransectionSection extends StatelessWidget {
   const CustomUserDetailLatestTransectionSection({
@@ -23,22 +23,26 @@ class CustomUserDetailLatestTransectionSection extends StatelessWidget {
           children: [
             AssetsPath.imagePath(name: user.image),
             const Gap(10),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  user.title,
-                  style: AppFonts.getTitleFont(context),
-                ),
-                FittedBox(
-                  fit: BoxFit.scaleDown,
-                  child: Text(
-                    user.subtitle,
-                    style: AppFonts.getSubtitleFont(context),
+            Expanded(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  FittedBox(
+                    child: Text(
+                      user.title,
+                      style: AppFonts.getTitleFont(context),
+                    ),
                   ),
-                ),
-              ],
+                  FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Text(
+                      user.subtitle,
+                      style: AppFonts.getSubtitleFont(context),
+                    ),
+                  ),
+                ],
+              ),
             )
           ],
         ),

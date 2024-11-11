@@ -15,5 +15,5 @@ List<UserDetailModel> userList = [
   UserDetailModel(
       title: 'Madrani miechale',
       image: 'person3',
-      subtitle: 'Madraniadi10@gmail'),
+      subtitle: 'Madraniadi10@gmail.com'),
 ];

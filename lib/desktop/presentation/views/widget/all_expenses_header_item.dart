@@ -1,7 +1,9 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:resposive_dashboard/core/utils/icon_path.dart';
 import 'package:resposive_dashboard/core/models/expenses_item_model.dart';
+import 'package:resposive_dashboard/core/utils/icon_path.dart';
 
 class AllexpensesItemHeader extends StatelessWidget {
   const AllexpensesItemHeader(
@@ -19,16 +21,17 @@ class AllexpensesItemHeader extends StatelessWidget {
       children: [
         CircleAvatar(
           backgroundColor: bgColor,
-          radius: 30,
-          child:AssetsPath. iconsPath(
+          radius: min(MediaQuery.sizeOf(context).width * 0.04, 30),
+          child: AssetsPath.iconsPath(
             name: items.icon,
             colorFillter: ColorFilter.mode(color, BlendMode.srcIn),
           ),
         ),
         const Spacer(),
-        const Icon(
+        Icon(
           FontAwesomeIcons.angleRight,
           color: Colors.white,
+          size: min(MediaQuery.sizeOf(context).width * 0.04, 30),
         ),
       ],
     );
